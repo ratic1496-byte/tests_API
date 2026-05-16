@@ -3,7 +3,7 @@ BASE_URL = "https://postman-echo.com"
 
 def test_simple_get():
     response = requests.get(f"{BASE_URL}/get")
-    assert response.status_code == 500
+    assert response.status_code == 200
 
 def test_get_with_params():
     params = {"text": "hello"}
